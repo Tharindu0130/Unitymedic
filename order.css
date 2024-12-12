@@ -1,0 +1,467 @@
+:root {
+  --primary-color: #2c3e50;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+#header {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 16.5vh;
+  color: rgb(0, 0, 0);
+}
+
+/* Logo Alignment */
+#logo {
+  float: left;
+  width: 16.5vh;
+  height: 16.5vh;
+  display: flex;
+}
+
+#logo_img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  padding: 1.5vh;
+}
+
+/* Menu Item Styles */
+.menu-item {
+  padding-right: 3vh;
+  color: rgb(226, 226, 226);
+  font-style: none;
+}
+
+/* Navigation Bar Alignment */
+#nav_bar {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2.7vh;
+  margin-top: 7vh;
+  margin-right: 4vh;
+  text-underline-offset: none;
+}
+
+#nav_bar a {
+  transition: all 0.3s ease 0s;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+#nav_bar a:hover {
+  background-color: rgba(106, 106, 106, 0.548);
+}
+
+/* Hamburger Menu for Mobile Responsiveness */
+.hamburger {
+  display: none;
+  font-size: 3rem;
+  background-color: #2c3e50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 80%;
+}
+
+/* Intro Section Styles */
+.intro {
+  padding: 15vh 0;
+  background: url("img/pharmacist.png") no-repeat center center;
+  background-size: cover;
+  color: azure;
+}
+
+.intro h1 {
+  text-align: justify;
+  margin-left: 1100px;
+  font-size: 80px;
+  color: #1f2832;
+}
+
+.introh {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.introh h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-family: "Arial", sans-serif;
+}
+/* Style for product quantity input */
+.product-qty {
+  width: 70px; /* Set a fixed width for consistency */
+  padding: 8px; /* Add padding for a better feel */
+  font-size: 16px; /* Increase font size for better readability */
+  border: 2px solid #ccc; /* Light border for definition */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  text-align: center; /* Align text in the center */
+  outline: none; /* Remove outline */
+  transition: all 0.3s ease; /* Smooth transition on hover and focus */
+}
+
+/* Focus state */
+.product-qty:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6); /* Add a green shadow for focus */
+}
+
+/* Hover state */
+.product-qty:hover {
+  border-color: #2196F3; /* Light blue border on hover */
+}
+
+/* Style for negative values */
+.product-qty[type="number"]::-webkit-outer-spin-button,
+.product-qty[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-qty[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.medisecname h1{
+  font-size: 40px;
+  margin-left: 630px;
+  color: var(--primary-color);
+}
+
+.medicine {
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+  width: 400px;
+  padding: 45px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.medicine img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.medicine h3 {
+  font-size: 25px;
+  margin: 40px 0;
+  color: #333;
+}
+.Analgesics h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+.Antibiotics h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+.Antidepressant h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+.Antidepressants h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+.Antihistamines h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+.Antihypertensives h1{
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
+
+
+#Analgesics,
+#Antibiotics,
+#Antidepressants,
+#Antihistamines,
+#Antihypertensives {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.mid {
+  display: flex;
+}
+
+.func {
+  width: 45%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.func h2,
+.func h3 {
+  color: #2c3e50;
+  margin: 15px 0;
+}
+
+#totalPrice {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 20px;
+}
+
+.func button {
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.func button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.func button:active {
+  background-color: #003d80;
+  transform: scale(0.95);
+}
+#basketTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+}
+
+#basketTable th,
+#basketTable td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+#basketTable th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+#basketTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#basketTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+#basketTable td:last-child {
+  text-align: center;
+}
+
+#basketTable button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#basketTable button:hover {
+  background-color: #c0392b;
+}
+
+#cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+  margin-top: 820px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2,
+#cart h3 {
+  margin: 10px 0;
+}
+.footer {
+    background-color: #2c3e50;
+    padding: 2vh 5vh;
+  }
+  
+  .footer .box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    flex-wrap: wrap;
+  }
+  
+  .footer .box-container .logob img {
+    max-width: 30vh; 
+    height: auto;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 0;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    padding: 0.2rem 0;
+    text-decoration: none;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer .credit span {
+    color: rgb(255, 255, 255);
+  }
+
+/* Media Queries */
+
+/* For desktop screens */
+/* For screens 320px wide */
+@media only screen and (max-width: 320px) {
+  #header {
+    height: 15vh;
+  }
+
+  #logo {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  
+  #nav_bar {
+    display: none; /* Hidden by default on mobile screens */
+    flex-direction: column; /* Stack items vertically */
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 16.5vh; /* Below the header */
+    right: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Bring to front */
+    padding: 1rem;
+  }
+  
+  #nav_bar.active {
+    display: flex; /* Display when active */
+  }
+  
+  #nav_bar a {
+    padding: 1rem 0;
+    text-align: center; /* Center text for vertical menu */
+    color: white; /* Update color for better contrast */
+    font-size: 1.5rem; /* Increase font size for touch targets */
+  }
+  
+
+  .hamburger {
+    display: block;
+  }
+
+  .intro h1 {
+    font-size: 20px; /* Adjusted font size */
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .medicine {
+    width: 70%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .medicine h3 {
+    font-size: 14px; /* Smaller font size for headings */
+  }
+
+  .func {
+    width: 100%;
+    padding: 10px; /* Adjust padding for small screens */
+  }
+  .medisecname h1{
+    margin-left: 130px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .mid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #Analgesics, #Antibiotics, #Antidepressants, #Antihistamines, #Antihypertensives {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  #cart {
+    width: 100%;
+    box-shadow: none;
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  #totalPrice {
+    font-size: 16px;
+  }
+
+  #basketTable {
+    font-size: 14px; /* Smaller table font size */
+    width: 80%;
+  }
+
+  #basketTable th, #basketTable td {
+    padding: 5px; /* Smaller padding for table cells */
+  }
+}
+
+/* For screens 375px wide */
