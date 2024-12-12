@@ -10,16 +10,21 @@ body {
 #header {
   width: 100%;
   background-color: var(--primary-color);
-  height: 16.5vh;
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   color: rgb(0, 0, 0);
 }
 
 /* Logo Alignment */
 #logo {
   float: left;
-  width: 16.5vh;
-  height: 16.5vh;
+  width: 8vh;
+  height: 8vh;
   display: flex;
+  flex: 1;
 }
 
 #logo_img {
@@ -41,9 +46,9 @@ body {
 #nav_bar {
   float: right;
   display: flex;
+  flex: 2;
   justify-content: flex-end;
   font-size: 2.7vh;
-  margin-top: 7vh;
   margin-right: 4vh;
   text-underline-offset: none;
 }
@@ -79,7 +84,7 @@ body {
 
 .intro h1 {
   text-align: justify;
-  margin-left: 1100px;
+align-self: flex-end;
   font-size: 80px;
   color: #1f2832;
 }
@@ -100,30 +105,30 @@ body {
   text-transform: capitalize;
   font-family: "Arial", sans-serif;
 }
+
 /* Style for product quantity input */
 .product-qty {
-  width: 70px; /* Set a fixed width for consistency */
-  padding: 8px; /* Add padding for a better feel */
-  font-size: 16px; /* Increase font size for better readability */
-  border: 2px solid #ccc; /* Light border for definition */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  text-align: center; /* Align text in the center */
-  outline: none; /* Remove outline */
-  transition: all 0.3s ease; /* Smooth transition on hover and focus */
+  width: 70px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 /* Focus state */
 .product-qty:focus {
-  border-color: #4CAF50; /* Change border color on focus */
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6); /* Add a green shadow for focus */
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
 }
 
 /* Hover state */
 .product-qty:hover {
-  border-color: #2196F3; /* Light blue border on hover */
+  border-color: #2196F3;
 }
 
-/* Style for negative values */
 .product-qty[type="number"]::-webkit-outer-spin-button,
 .product-qty[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -135,9 +140,9 @@ body {
   appearance: textfield;
 }
 
-.medisecname h1{
+.medisecname h1 {
   font-size: 40px;
-  margin-left: 630px;
+  align-self: center;
   color: var(--primary-color);
 }
 
@@ -161,41 +166,21 @@ body {
 }
 
 .medicine h3 {
-  font-size: 25px;
+  font-size: 18px;
   margin: 40px 0;
   color: #333;
 }
-.Analgesics h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
-.Antibiotics h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
-.Antidepressant h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
-.Antidepressants h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
-.Antihistamines h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
-.Antihypertensives h1{
-  font-size: 40px;
-  margin-left: 580px;
-  color: #2c3e50;
-}
 
+.Analgesics h1,
+.Antibiotics h1,
+.Antidepressant h1,
+.Antidepressants h1,
+.Antihistamines h1,
+.Antihypertensives h1 {
+  font-size: 40px;
+  margin-left: 580px;
+  color: #2c3e50;
+}
 
 #Analgesics,
 #Antibiotics,
@@ -207,12 +192,9 @@ body {
   justify-content: space-around;
   padding: 20px;
 }
-.mid {
-  display: flex;
-}
 
 .func {
-  width: 45%;
+  width: 100%;
   padding: 20px;
   background-color: #f8f9fa;
   border: 1px solid #ddd;
@@ -254,6 +236,7 @@ body {
   background-color: #003d80;
   transform: scale(0.95);
 }
+
 #basketTable {
   width: 100%;
   border-collapse: collapse;
@@ -265,7 +248,7 @@ body {
 
 #basketTable th,
 #basketTable td {
-  padding: 12px 15px;
+  padding: 12px 8px;
   border: 1px solid #ddd;
 }
 
@@ -316,152 +299,96 @@ body {
 #cart h3 {
   margin: 10px 0;
 }
+
+/* Footer Styles */
 .footer {
-    background-color: #2c3e50;
-    padding: 2vh 5vh;
-  }
-  
-  .footer .box-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1vh;
-    flex-wrap: wrap;
-  }
-  
-  .footer .box-container .logob img {
-    max-width: 30vh; 
-    height: auto;
-  }
-  
-  .footer .box-container .box h3 {
-    font-size: 1.5rem;
-    color: white;
-    padding: 0.5rem 0;
-  }
-  
-  .footer .box-container .box a {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    padding: 0.2rem 0;
-    text-decoration: none;
-  }
-  
-  .footer .credit {
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .footer .credit span {
-    color: rgb(255, 255, 255);
-  }
+  background-color: #2c3e50;
+  padding: 2vh 5vh;
+}
 
-/* Media Queries */
+.footer .box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vh;
+  flex-wrap: wrap;
+}
 
-/* For desktop screens */
-/* For screens 320px wide */
-@media only screen and (max-width: 320px) {
+.footer .box-container .logob img {
+  max-width: 30vh;
+  height: auto;
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1rem;
+  color: white;
+  padding: 0.2rem 0;
+  text-decoration: none;
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .credit span {
+  color: rgb(255, 255, 255);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Header */
   #header {
-    height: 15vh;
+    height: 20vh;
+  }
+  #logo_img{
+    width: 80px;
+    height: auto;
   }
 
   #logo {
-    width: 15vh;
-    height: 15vh;
+    float: none;
+    width: 30%;
+   
+  }
+  #nav_bar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
   }
 
-  
-  #nav_bar {
-    display: none; /* Hidden by default on mobile screens */
-    flex-direction: column; /* Stack items vertically */
-    background-color: var(--primary-color);
-    position: absolute;
-    top: 16.5vh; /* Below the header */
-    right: 0;
-    width: 100%; /* Full width */
-    z-index: 1000; /* Bring to front */
-    padding: 1rem;
-  }
-  
   #nav_bar.active {
-    display: flex; /* Display when active */
+    display: flex;
   }
-  
-  #nav_bar a {
-    padding: 1rem 0;
-    text-align: center; /* Center text for vertical menu */
-    color: white; /* Update color for better contrast */
-    font-size: 1.5rem; /* Increase font size for touch targets */
+  .intro h1{
+    font-size: 50px;
   }
-  
 
   .hamburger {
     display: block;
+    cursor: pointer;
+    margin-left: 5px;
   }
 
-  .intro h1 {
-    font-size: 20px; /* Adjusted font size */
-    margin-left: 0;
+  #nav_bar a {
+    padding: 10px;
     text-align: center;
-  }
-
-  .medicine {
-    width: 70%;
-    margin-left: 50px;
-    margin-bottom: 10px;
-  }
-
-  .medicine h3 {
-    font-size: 14px; /* Smaller font size for headings */
-  }
-
-  .func {
     width: 100%;
-    padding: 10px; /* Adjust padding for small screens */
   }
   .medisecname h1{
-    margin-left: 130px;
-    justify-content: center;
-    margin-top: 30px;
+    margin-left: 50px;
   }
 
-  .mid {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #Analgesics, #Antibiotics, #Antidepressants, #Antihistamines, #Antihypertensives {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-  }
-
-  #cart {
-    width: 100%;
-    box-shadow: none;
-    padding: 15px;
-    margin-top: 50px;
-  }
-
-  #totalPrice {
-    font-size: 16px;
-  }
-
-  #basketTable {
-    font-size: 14px; /* Smaller table font size */
-    width: 80%;
-  }
-
-  #basketTable th, #basketTable td {
-    padding: 5px; /* Smaller padding for table cells */
-  }
 }
-
-/* For screens 375px wide */
