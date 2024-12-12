@@ -143,6 +143,7 @@ align-self: flex-end;
 .medisecname h1 {
   font-size: 40px;
   align-self: center;
+  margin-left: 860px;
   color: var(--primary-color);
 }
 
@@ -150,7 +151,7 @@ align-self: flex-end;
   display: inline-block;
   text-align: center;
   margin: 15px;
-  width: 400px;
+  width: 600px;
   padding: 45px;
   background-color: #f8f9fa;
   border: 1px solid #ddd;
